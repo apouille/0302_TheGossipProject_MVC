@@ -10,7 +10,7 @@
     <h5 class="card-title"><%= potin.title %></h5>
     <h6 class="card-subtitle mb-2 text-muted"><%= potin.user.first_name %></h6>
     <p class="card-text"> <%= potin.content %></p>
-    <a href="gossip/:id" class="card-link"> Pour en savoir plus...</a>
+    <a href="gossip/<%= i+1%>" class="card-link"> Pour en savoir plus...</a>
   </div>
 </div>
 <% end %>
