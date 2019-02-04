@@ -38,19 +38,14 @@ rails db:seed
 rails serveur
 ```
 
-4/ Lance le serveur : rails serveur  
-
-```
-rails serveur
-```
-
-5/ Va sur le http://localhost:3000  
+4/ Va sur le http://localhost:3000  
 
 
 ##  :dizzy: Details 
 
-Notre application est composé de 6 modèles User, City, Gossip, Tag, Join_Table_Tag_Gossip et Message.
+Notre application est composé de la façon suivante :
 * Home : la liste de tous les potins
+* Author profile : une fiche profil de nos utilisateurs
 * Team : c'est nous !
 * Contact
 * Welcome/ce que vous voulez 
