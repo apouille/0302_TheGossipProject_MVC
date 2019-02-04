@@ -23,7 +23,7 @@ end
 end
 
 20.times do
- gossip = Gossip.create(title: Faker::Lorem.word, content: Faker::HarryPotter.quote, user: User.all.sample)
+ gossip = Gossip.create(title: Faker::Lorem.word, content: Faker::FamousLastWords.last_words, user: User.all.sample)
 end
 
 10.times do

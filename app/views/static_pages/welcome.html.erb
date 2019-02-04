@@ -1,12 +1,16 @@
-<h1>Welcome <%=@first_name%></h1>
-<p>Find me in app/views/static_pages/welcome.html.erb</p>
+<h1>Welcome ! <%=@first_name%></h1>
+<p>  Voici notre site de petits (po)potins ! </p>
 
-<p>
-	<ul>
-	<% @gossip.each_with_index do |potin, i| %>
-	<li><a href="/gossip/<%= i +1 %>"> <%= potin.user.first_name %> : <%=potin.title%> </a></li>
 
-	<% end %>
-	</ul>
-
-</p>
+<div class="container-fluid">
+	<div class="row mt-3">
+<% @gossip.each_with_index do |potin, i| %>
+<div class="card border-primary mb-3" style="max-width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title"><%= potin.title %></h5>
+    <h6 class="card-subtitle mb-2 text-muted"><%= potin.user.first_name %></h6>
+    <p class="card-text"> <%= potin.content %></p>
+    <a href="gossip/:id" class="card-link"> Pour en savoir plus...</a>
+  </div>
+</div>
+<% end %>
