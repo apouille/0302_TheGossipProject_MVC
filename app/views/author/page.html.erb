@@ -1,0 +1,9 @@
+<h1> Page de <%= @user.first_name %> <%= @user.last_name %> </h1>
+<p> <%= @user.first_name %> a <%= @user.age %> ans et habite <%= @user.city.name %>. Contactez cet auteur à l'adresse email suivante : <%= @user.email %> </p>
+<p> Description : <%= @user.description %></p>
+
+<p> <ul><% @user.gossips.each do |gossip| %>
+	<li><%= gossip.title %> : <%= gossip.content %></li>
+    <% end %>
+</ul>
+</p>

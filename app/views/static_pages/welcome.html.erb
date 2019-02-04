@@ -4,7 +4,8 @@
 <p>
 	<ul>
 	<% @gossip.each_with_index do |potin, i| %>
-	<li> <%= potin.user.first_name %> <%=potin.title%> </li>
+	<li><a href="/gossip/<%= i +1 %>"> <%= potin.user.first_name %> : <%=potin.title%> </a></li>
+
 	<% end %>
 	</ul>
 
