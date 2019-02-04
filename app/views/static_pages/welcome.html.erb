@@ -1,0 +1,11 @@
+<h1>Welcome <%=@first_name%></h1>
+<p>Find me in app/views/static_pages/welcome.html.erb</p>
+
+<p>
+	<ul>
+	<% @gossip.each_with_index do |potin, i| %>
+	<li> <%= potin.user.first_name %> <%=potin.title%> </li>
+	<% end %>
+	</ul>
+
+</p>
