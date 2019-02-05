@@ -4,11 +4,12 @@
     <%= form_tag url_for(action: 'create'), method: "post" do %>
 
       <%= label_tag 'Title' %>
-      <%= text_field_tag 'title', @gossip.title %>
-      <br /> <br />
+      <%= text_field_tag 'title', @gossip.title, :class => "form-control", placeholder: "Title"%> <br /> <br />
+      <br/>Alors, ça veut bitcher sur qui et sur quoi? <br/>
+
 
       <%= label_tag 'Content' %>
-      <%= text_area_tag 'content', @gossip.content %>
+      <%= text_area_tag 'content', @gossip.content, :class => "form-control", placeholder: "Content"%>
       <br /> <br />
 
       <%= submit_tag "Create Post" %>
