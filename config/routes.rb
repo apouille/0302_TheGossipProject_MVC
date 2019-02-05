@@ -1,4 +1,6 @@
+
 Rails.application.routes.draw do
+	resources :gossip
   get 'author/:id', to: 'author#page', as: "author"
   get 'gossip/:id', to: 'gossip#show'
   get 'static_pages/team'
